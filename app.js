@@ -10,7 +10,7 @@ const Schema = mongoose.Schema;
 const bcrypt = require("bcryptjs");
 
 const mongoDb =
-  "mongodb+srv://chileshe355:auth0@cluster0.ypqyfwv.mongodb.net/?retryWrites=true&w=majority";
+  "mongodb+srv://<username>:<password>@cluster0.ypqyfwv.mongodb.net/?retryWrites=true&w=majority";
 mongoose.connect(mongoDb, { useUnifiedTopology: true, useNewUrlParser: true });
 const db = mongoose.connection;
 db.on("error", console.error.bind(console, "mongo connection error"));
